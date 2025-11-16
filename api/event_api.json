@@ -1,0 +1,224 @@
+{
+    "success": true,
+    "data": [
+        {
+            "id_event": "1",
+            "batch_event": "1",
+            "is_active": "1",
+            "event_name": "Indonesian Golden Youth Summit",
+            "deskripsi_event": "Indonesia Golden Youth Summit (IGYS) merupakan program kepemudaan unggulan Langkah Emas Indonesia yang dirancang sebagai ruang strategis untuk mengembangkan kapasitas kepemimpinan pemuda, memperluas jejaring internasional, dan menumbuhkan wawasan global. Melalui rangkaian kegiatan seperti International Conference, kunjungan ke World\u2019s Top Universities, Discussion Forum, Project Presentation, City & Cultural Exploration, hingga Social Project dan Awarding Delegates yang memberikan ruang kompetitif sehat bagi para peserta untuk menampilkan kemampuan terbaik yang mereka miliki.",
+            "banner_poster": "https:\/\/i.ibb.co.com\/ZzcfMPRd\/Desktop.jpg",
+            "avatar": null,
+            "lokasi_event": "Malaysia",
+            "fasilitas": "[\"Makan siang\", \"Transportasi\", \"Penginapan\"]",
+            "jumlah_pembayaran": "Transfer Bank",
+            "tanggal_mulai": "2026-01-21",
+            "tanggal_selesai": "2026-01-24",
+            "status_event": "Pendaftaran",
+            "url_gambar_thumbnail": "https:\/\/i.ibb.co.com\/DDN0pgfF\/Whats-App-Image-2025-10-10-at-14-44-28.jpg",
+            "link_daftar": "https:\/\/lamansia.com\/daftar?id_event=1",
+            "button_daftar": "0",
+            "link_guidebook": "https:\/\/drive.google.com\/file\/d\/1O78__wU7GheYLvBil4fpA-YTowC5owoI\/view?usp=drivesdk",
+            "no_admin": "6287779561341",
+            "program": "[{\"judul_program\": \"Workshop Fotografi\", \"deskripsi_program\": \"Belajar teknik dasar fotografi.\"}, {\"judul_program\": \"Sesi Networking\", \"deskripsi_program\": \"Bertemu dengan para profesional.\"}]",
+            "galeri_foto": [
+                "thumbnail\/banner_01.jpg",
+                "https:\/\/i.ibb.co.com\/GQbzBYmM\/IMG-9213.png",
+                "thumbnail\/banner_02.jpg",
+                "https:\/\/i.ibb.co.com\/wNs3sSBy\/IMG-9221.png",
+                "https:\/\/i.ibb.co.com\/bjyJbnMz\/IMG-9214.png",
+                "https:\/\/i.ibb.co.com\/m5mDNtvv\/IMG-9218.png",
+                "https:\/\/i.ibb.co.com\/xKvSZrDv\/IMG-9215.png",
+                "https:\/\/i.ibb.co.com\/KxsWmrVV\/IMG-9217.png",
+                "https:\/\/i.ibb.co.com\/TBv8xS10\/IMG-9220.png",
+                "https:\/\/i.ibb.co.com\/93WVRSNV\/IMG-9222.png",
+                "https:\/\/i.ibb.co.com\/W4dncNvw\/IMG-9219.png",
+                "https:\/\/i.ibb.co.com\/yB4tnMqh\/IMG-9223.png"
+            ],
+            "rundown_acara": [
+                {
+                    "items": [
+                        {
+                            "jam": "04:00:00 - 05:00:00",
+                            "judul": "Welcoming Ceremony & Technical Meeting at Airport",
+                            "deskripsi": null
+                        },
+                        {
+                            "jam": "05:00:00 - 07:00:00",
+                            "judul": "Baggage Loading & Immigration",
+                            "deskripsi": null
+                        },
+                        {
+                            "jam": "07:00:00 - 10:00:00",
+                            "judul": "Flight to Kuala Lumpur & Baggage Claim",
+                            "deskripsi": null
+                        },
+                        {
+                            "jam": "10:00:00 - 13:30:00",
+                            "judul": "University Kebangsaan Malaysia",
+                            "deskripsi": null
+                        },
+                        {
+                            "jam": "13:30:00 - 16:30:00",
+                            "judul": "Kuala Lumpur Library",
+                            "deskripsi": null
+                        },
+                        {
+                            "jam": "16:30:00 - 20:00:00",
+                            "judul": "Gallery Petronas & Twin Tower",
+                            "deskripsi": null
+                        },
+                        {
+                            "jam": "20:00:00 - 22:00:00",
+                            "judul": "Saloma Bridge",
+                            "deskripsi": null
+                        },
+                        {
+                            "jam": "22:00:00 - 06:00:00",
+                            "judul": "Check In Hotel & Night Rest",
+                            "deskripsi": null
+                        }
+                    ]
+                },
+                {
+                    "items": [
+                        {
+                            "jam": "06:00:00 - 07:00:00",
+                            "judul": "Morning Call & Breakfast",
+                            "deskripsi": null
+                        },
+                        {
+                            "jam": "07:00:00 - 09:15:00",
+                            "judul": "Batu Caves",
+                            "deskripsi": null
+                        },
+                        {
+                            "jam": "09:15:00 - 12:00:00",
+                            "judul": "International Islamic School Malaysia (IISM)",
+                            "deskripsi": null
+                        },
+                        {
+                            "jam": "12:00:00 - 15:00:00",
+                            "judul": "International Islamic University Malaysia (IIUM)",
+                            "deskripsi": null
+                        },
+                        {
+                            "jam": "15:00:00 - 16:30:00",
+                            "judul": "Malaysia Tourism Center (Matic)",
+                            "deskripsi": null
+                        },
+                        {
+                            "jam": "16:30:00 - 17:30:00",
+                            "judul": "Chocolate Kingdom",
+                            "deskripsi": null
+                        },
+                        {
+                            "jam": "17:30:00 - 19:30:00",
+                            "judul": "Central Market",
+                            "deskripsi": null
+                        },
+                        {
+                            "jam": "19:30:00 - 22:00:00",
+                            "judul": "Night Togetherness",
+                            "deskripsi": null
+                        },
+                        {
+                            "jam": "22:00:00 - 06:00:00",
+                            "judul": "Night Rest",
+                            "deskripsi": null
+                        }
+                    ]
+                },
+                {
+                    "items": [
+                        {
+                            "jam": "06:00:00 - 07:00:00",
+                            "judul": "Morning Call & Breakfast",
+                            "deskripsi": null
+                        },
+                        {
+                            "jam": "07:00:00 - 08:30:00",
+                            "judul": "Morning Agenda ",
+                            "deskripsi": null
+                        },
+                        {
+                            "jam": "08:30:00 - 10:30:00",
+                            "judul": "Public Transportasion Exercion",
+                            "deskripsi": null
+                        },
+                        {
+                            "jam": "10:30:00 - 13:30:00",
+                            "judul": "International Conference",
+                            "deskripsi": null
+                        },
+                        {
+                            "jam": "13:30:00 - 14:30:00",
+                            "judul": "Rest, Prayer & Meal Break",
+                            "deskripsi": null
+                        },
+                        {
+                            "jam": "14:30:00 - 18:30:00",
+                            "judul": "IGYS Project & SDGs Presentation",
+                            "deskripsi": null
+                        },
+                        {
+                            "jam": "18:30:00 - 22:00:00",
+                            "judul": "Free Time for Independent Exploration",
+                            "deskripsi": null
+                        },
+                        {
+                            "jam": "22:00:00 - 06:00:00",
+                            "judul": "Night Rest",
+                            "deskripsi": null
+                        }
+                    ]
+                },
+                {
+                    "items": [
+                        {
+                            "jam": "06:00:00 - 07:00:00",
+                            "judul": "Morning Call & Breakfast",
+                            "deskripsi": null
+                        },
+                        {
+                            "jam": "07:00:00 - 08:30:00",
+                            "judul": "Agenda Pagi",
+                            "deskripsi": null
+                        },
+                        {
+                            "jam": "08:30:00 - 10:30:00",
+                            "judul": "Museum Bank Negara Malaysia",
+                            "deskripsi": null
+                        },
+                        {
+                            "jam": "10:30:00 - 13:30:00",
+                            "judul": "Visit Inodenesian Embassy (KBRI)",
+                            "deskripsi": null
+                        },
+                        {
+                            "jam": "13:30:00 - 16:30:00",
+                            "judul": "Putra Jaya",
+                            "deskripsi": null
+                        },
+                        {
+                            "jam": "16:30:00 - 17:30:00",
+                            "judul": "Kuala Lumpur International Airport (KLIA)",
+                            "deskripsi": null
+                        },
+                        {
+                            "jam": "17:30:00 - 19:00:00",
+                            "judul": "Baggage Loading & Immigration",
+                            "deskripsi": null
+                        },
+                        {
+                            "jam": "19:00:00 - 22:00:00",
+                            "judul": "Flight to Kuala Lumpur & Baggage Claim",
+                            "deskripsi": null
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "message": "Data berhasil diambil"
+}

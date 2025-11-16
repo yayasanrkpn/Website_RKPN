@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Tentang Kami - Global Youth Summit</title>
+  <meta name="description" content="Yayasan Langkah Emas Indonesia merupakan wadah kepemudaan untuk melahirkan generasi emas yang berkarakter dan berkontribusi nyata bagi bangsa.">
+  <meta name="keywords" content="Yayasan, Langkah Emas, Kepemudaan, Indonesia, Event, Pendidikan, Sosial">
+  <meta name="author" content="Yayasan Langkah Emas Indonesia">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/lamansia.png">
+
+  <!-- Fonts & Icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+  <script src="assets/js/firebase-init.js"></script>
+
+<body>
+  <!-- Overlay -->
+  <div class="mobile-menu-overlay" id="mobile-menu-overlay"></div>
+
+  <!-- HEADER / NAVBAR -->
+  <header>
+    <div class="container nav">
+      <div class="hamburger-menu" id="hamburger-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="brand">
+        <img alt="GYS Logo" src="assets/img/gys.png"/>
+        <div class="title">Global <span>Youth</span> Summit</div>
+      </div>
+      <nav class="menu">
+        <a href="index.html">Home</a>
+        <a href="index.html#visi">Visi &amp; Misi</a>
+        <a href="index.html#program">Program Kami</a>
+        <a href="validasi_status.html">Cek Status</a>
+        <a href="https://drive.google.com/file/d/1Ec1YOarCR3zkqp08xbGU4hiFKIn4teKa/view?usp=sharing" target="_blank">Legalitas</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- MOBILE MENU -->
+  <nav class="mobile-menu" id="mobile-menu">
+    <div class="mobile-menu-header">
+      <div class="brand">
+        <img alt="GYS Logo" src="assets/mascot.png"/>
+      </div>
+      <button id="close-btn" aria-label="Tutup Menu">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+    </div>
+
+    <a href="index.html">Home</a>
+    <a href="index.html#visi">Visi &amp; Misi</a>
+    <a href="index.html#program">Program Kami</a>
+    <a href="validasi_status.html">Cek Status</a>
+    <a href="https://drive.google.com/file/d/1Ec1YOarCR3zkqp08xbGU4hiFKIn4teKa/view?usp=sharing" target="_blank">Legalitas</a>
+
+    <a aria-label="Hubungi Kami" class="wa-mobile" href="https://wa.me/6288213976979?text=Saya%20tertarik%20dengan%20event%20ini">
+      <i class="fab fa-whatsapp"></i> <span>Hubungi via WhatsApp</span>
+    </a>
+  </nav>
+
+  <div class="main-content">
+    <h1>Tentang Kami</h1>
+    <p>
+     Global Youth Summit (GYS) adalah organisasi nirlaba yan
+     g berfokus pada pengembangan potensi, kepemimpinan, dan 
+     kolaborasi generasi muda di tingkat nasional maupun internasional.
+     GYS hadir sebagai wadah bagi para pemuda untuk bertukar gagasan, 
+     memperluas wawasan global, serta menciptakan dampak sosial
+    yang positif melalui pendidikan, inovasi, dan aksi nyata.
+    Melalui berbagai program seperti pelatihan kepemimpinan, 
+    konferensi internasional, kegiatan sosial, serta proyek kolaboratif
+     lintas budaya, GYS berkomitmen untuk membentuk generasi muda yang berintegritas, 
+     visioner, dan siap menjadi agen perubahan dunia.
+    </p>
+
+    <h2>Visi Kami</h2>
+    <p>
+     Menjadi yayasan terdepan dalam membangun generasi muda 
+     yang berdaya saing global, berkarakter, dan berkontribusi
+      aktif dalam menciptakan dunia yang lebih berkeadilan, berkelanjutan, dan harmonis.
+    </p>
+
+    <h2>Misi Kami</h2>
+    <ul>
+      <li>Memberdayakan pemuda melalui pendidikan, pelatihan, dan pengalaman lintas budaya agar siap menghadapi tantangan global</li>
+      <li>Mendorong kolaborasi internasional antara pemuda dari berbagai negara untuk berbagi ide, solusi, dan inovasi sosial.</li>
+      <li>Mengembangkan kepemimpinan yang beretika dan berwawasan global guna menciptakan pemimpin masa depan yang tangguh dan inspiratif.</li>
+      <li>Mendukung proyek sosial dan lingkungan yang diprakarsai oleh pemuda demi mewujudkan pembangunan berkelanjutan (SDGs).</li>
+      <li>Membangun jejaring global antara komunitas, lembaga pendidikan, sektor swasta, dan pemerintah dalam memperkuat peran pemuda di masyarakat.</li>
+    </ul>
+
+    <h2>Nilai-nilai Kami</h2>
+    <p>
+      <li>Integritas (Integrity)
+      Menjunjung tinggi kejujuran, tanggung jawab, dan konsistensi dalam setiap tindakan dan keputusan..
+    </li>
+    <li>Kepemimpinan (Leadership)
+      Mendorong setiap individu untuk menjadi pemimpin yang berani, visioner, dan mampu menginspirasi perubahan positif.
+    </li>
+    <li>Kolaborasi (Collaboration)
+Mengedepankan kerja sama lintas budaya dan disiplin untuk mencapai tujuan bersama dan memperluas dampak sosial.
+    </li>
+    <li>Inovasi (Innovation)
+Menggali kreativitas dan gagasan baru dalam menciptakan solusi berkelanjutan untuk tantangan global.
+</li>
+<li>Empati (Empathy)
+Menumbuhkan rasa peduli terhadap sesama dan lingkungan sebagai dasar dari setiap aksi dan program.
+</li>
+<li>Keberlanjutan (Sustainability)
+Berkomitmen untuk menjaga keseimbangan antara pembangunan sosial, ekonomi, dan lingkungan demi masa depan yang lebih baik.</li>
+<li>Keunggulan (Excellence)
+Berupaya memberikan hasil terbaik dalam setiap kegiatan dan terus meningkatkan kualitas individu maupun organisasi.</li>
+
+    </p>
+  </div>
+
+  <footer>
+  <div class="footer-in">
+    <div>
+      <div class="footer-brand">
+        <img src="assets/img/gys.png" alt="logo" style="height:32px"> 
+        <strong style="color:var(--paper); font-size: 16px;">Global Youth Summit</strong>
+      </div>
+      <div class="footer-contact-info small">
+        <p>
+          <strong style="color: var(--gold);">Alamat:</strong><br>
+          Jl. Rasamala Blok N.8, RT.03/RW.04, Kedunghalang, Kec. Bogor Utara, Kota Bogor, Jawa Barat 16158
+        </p>
+        <p>
+          <strong style="color: var(--gold);">Kontak:</strong><br>
+          Telp: 088213976979<br>
+          Email: hallo.globalyouth@gmail.com
+        </p>
+      </div>
+      <div class="social-links">
+        <a href="mailto:hallo.globalyouth@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+          <a href="https://www.instagram.com/Globalyouthsummit_id/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://www.tiktok.com/@" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
+        <a href="https://drive.google.com/file/d/1XhFN_9BF3Sf3MKr3VbWWKSSjc87mGMVh/view?usp=sharing" target="_blank" title="Akta Notaris"><i class="fa-solid fa-file-alt"></i></a>
+      </div>
+    </div>
+    <div>
+      <strong style="color:var(--gold); font-size:16px;">Navigasi Cepat</strong>
+      <div class="small">
+        <a href="index.html"><i class="fa-solid fa-house"></i> Home</a>
+        <a href="event.html"><i class="fa-solid fa-calendar"></i> Semua Event</a>
+        <a href="validasi_status.html"><i class="fa-solid fa-magnifying-glass"></i> Cek Status</a>
+      </div>
+    </div>
+    <div>
+      <strong style="color:var(--gold); font-size:16px;">Tentang Kami</strong>
+      <div class="small">
+        <a href="about.html"><i class="fa-solid fa-info-circle"></i> Visi & Misi</a>
+        <a href="terms.html"><i class="fa-solid fa-file-contract"></i> Syarat & Ketentuan</a>
+        <a href="admin.html"><i class="fa-solid fa-user-shield"></i> Admin</a>
+      </div>
+    </div>
+  </div>
+</footer>
+<script src="assets/js/main.js"></script>
+</body>
+
+</html>

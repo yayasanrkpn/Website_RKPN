@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Detail Event - Global Youth Summit</title>
+  <meta name="description" content="Detail informasi event Global Youth Summit.">
+  <meta name="keywords" content="Event, Detail, Global, Youth, Summit">
+  <meta name="author" content="Global Youth Summit">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/logo.png">
+
+
+
+  <!-- Fonts & Icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="assets/css/style.css" />
+
+    <style>
+    .main-content {
+      padding: 40px 20px;
+      max-width: 960px;
+      margin: 0 auto;
+      line-height: 1.6;
+      color: #333;
+    }
+    .main-content h1 {
+      font-size: 2.5em;
+      color: #053F5C;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+    .main-content h2 {
+      font-size: 1.8em;
+      color: #00537A;
+      margin-top: 30px;
+      margin-bottom: 15px;
+    }
+    .main-content p {
+      margin-bottom: 15px;
+    }
+    .event-detail-card {
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+      padding: 30px;
+      margin-top: 30px;
+    }
+    .event-detail-card img {
+      width: 100%;
+      height: 400px; /* Set a fixed height like the live site */
+      object-fit: cover; /* Ensure the image covers the area without distortion */
+      border-radius: 8px;
+      margin-bottom: 20px;
+    }
+    .event-detail-card .info-item {
+      margin-bottom: 10px;
+    }
+    .event-info-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 20px;
+      margin: 30px 0;
+    }
+    .event-info-grid .info-item {
+      background: #f8f9fa;
+      border: 1px solid #dee2e6;
+      border-radius: 12px;
+      padding: 20px;
+      text-align: center;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+    .event-info-grid .info-item:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+    }
+    .event-info-grid .info-label {
+      font-weight: 600;
+      color: #333; /* Darker text for contrast on yellow background */
+      margin-bottom: 8px;
+      font-size: 1em;
+      display: block;
+      background-color: #FFD700; /* Yellow-orange color */
+      padding: 5px 10px; /* Add some padding */
+      border-radius: 5px; /* Slightly rounded corners */
+    }
+    .event-info-grid .info-value {
+      color: #495057;
+      font-size: 1.1em;
+      font-weight: 700;
+    }
+    /* RUNDOWN STYLES */
+    .rundown-nav {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 20px;
+      border-bottom: 1px solid #e2e8f0;
+      padding-bottom: 10px;
+    }
+    .rundown-nav button {
+      background: #f1f5f9;
+      border: 1px solid #e2e8f0;
+      border-radius: 8px;
+      padding: 8px 14px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+    .rundown-nav button:hover {
+      background: #e2e8f0;
+    }
+    .rundown-nav button.active {
+      background: #053F5C;
+      color: white;
+      border-color: #053F5C;
+    }
+    .rundown-content ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    .rundown-content li {
+      display: block; /* Mengubah dari flex menjadi block */
+      padding: 12px 0;
+      border-bottom: 1px solid #f1f5f9;
+    }
+    .rundown-content li:last-child {
+      border-bottom: none;
+    }
+    .rundown-time {
+      font-weight: 700;
+      color: #053F5C;
+      margin-bottom: 5px; /* Memberi sedikit jarak di bawah jam */
+    }
+    .rundown-description {
+      color: #334155;
+      font-weight: bold; /* Membuat deskripsi menjadi tebal */
+    }
+  </style>
+
+</head>
+
+<body>
+  <!-- Overlay -->
+  <div class="mobile-menu-overlay" id="mobile-menu-overlay"></div>
+
+  <!-- HEADER / NAVBAR -->
+  <header>
+    <div class="container nav">
+      <div class="hamburger-menu" id="hamburger-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      
+      <div class="brand">
+        <img alt="Logo GYS" src="assets/img/gys.png"/>
+        <div class="title">Global <span>Youth</span> Summit</div>
+      </div>
+      
+      <nav class="menu">
+        <a href="index.html">Home</a>
+        <a href="index.html#visi">Visi &amp; Misi</a>
+        <a href="index.html#program">Program Kami</a>
+        <a href="validasi_status.html">Cek Status</a>
+        <a href="https://drive.google.com/file/d/1Ec1YOarCR3zkqp08xbGU4hiFKIn4teKa/view?usp=sharing" target="_blank">Legalitas</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- MOBILE MENU -->
+  <nav class="mobile-menu" id="mobile-menu">
+    <div class="mobile-menu-header">
+      <div class="brand">
+        <img alt="GYS Logo" src="assets/mascot.png"/>
+      </div>
+      <button id="close-btn" aria-label="Tutup Menu">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+    </div>
+
+    <a href="index.html">Home</a>
+    <a href="index.html#visi">Visi &amp; Misi</a>
+    <a href="index.html#program">Program Kami</a>
+    <a href="validasi_status.html">Cek Status</a>
+
+    <a href="validasi_status.html">Cek Status</a>
+    <a href="https://drive.google.com/file/d/1Ec1YOarCR3zkqp08xbGU4hiFKIn4teKa/view?usp=sharing" target="_blank">Legalitas</a>
+
+    <a aria-label="Hubungi Kami" class="wa-mobile" href="https://wa.me/6288213976979?text=Saya%20tertarik%20dengan%20event%20ini">
+      <i class="fab fa-whatsapp"></i> <span>Hubungi via WhatsApp</span>
+    </a>
+  </nav>
+
+  <div class="main-content">
+    <h1>Detail Event</h1>
+    <div class="event-detail-card" id="event-card">
+      <img src="assets/img/gys.png" alt="Event Image" id="event-banner">
+      <h2 id="event-name">Nama Event Placeholder</h2>
+      <div class="event-info-grid">
+        <div class="info-item">
+          <div class="info-label">Waktu</div>
+          <div class="info-value" id="event-dates"></div>
+        </div>
+        <div class="info-item">
+          <div class="info-label">Batch</div>
+          <div class="info-value" id="event-batch">Batch Placeholder</div>
+        </div>
+        <div class="info-item">
+          <div class="info-label">Lokasi</div>
+          <div class="info-value" id="event-location">Lokasi Event Placeholder</div>
+        </div>
+        <div class="info-item">
+          <div class="info-label">Status</div>
+          <div class="info-value" id="event-status">Pendaftaran Dibuka</div>
+        </div>
+      </div>
+      <hr>
+      <h2>Deskripsi</h2>
+      <p id="event-description">Ini adalah deskripsi placeholder untuk detail event. Informasi lebih lanjut mengenai event akan ditampilkan di sini setelah integrasi database.</p>
+      
+      <!-- RUNDOWN SECTION -->
+      <div id="rundown-section" style="margin-top: 30px; display: none;">
+        <hr>
+        <h2>Rundown Acara</h2>
+        <div class="rundown-nav" id="rundown-nav"></div>
+        <div class="rundown-content" id="rundown-content"></div>
+      </div>
+
+      <a href="form.html" class="btn btn-primary" id="register-button">Daftar Sekarang</a>
+    </div>
+  </div>
+
+  <footer>
+  <div class="footer-in">
+    <div>
+      <div class="footer-brand">
+        <img src="assets/img/gys.png" alt="logo" style="height:32px"> 
+        <strong style="color:var(--paper); font-size: 16px;">Global Youth Summit</strong>
+      </div>
+      <div class="footer-contact-info small">
+        <p>
+          <strong style="color: var(--gold);">Alamat:</strong><br>
+          Jl. Rasamala Blok N.8, RT.03/RW.04, Kedunghalang, Kec. Bogor Utara, Kota Bogor, Jawa Barat 16158
+        </p>
+        <p>
+          <strong style="color: var(--gold);">Kontak:</strong><br>
+          Telp: 088213976979<br>
+          Email: hallo.globalyouth@gmail.com
+        </p>
+      </div>
+      <div class="social-links">
+        <a href="mailto:hallo.globalyouth@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+          <a href="https://www.instagram.com/Globalyouthsummit_id/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://www.tiktok.com/@" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
+        <a href="https://drive.google.com/file/d/1XhFN_9BF3Sf3MKr3VbWWKSSjc87mGMVh/view?usp=sharing" target="_blank" title="Akta Notaris"><i class="fa-solid fa-file-alt"></i></a>
+      </div>
+    </div>
+    <div>
+      <strong style="color:var(--gold); font-size:16px;">Navigasi Cepat</strong>
+      <div class="small">
+        <a href="index.html"><i class="fa-solid fa-house"></i> Home</a>
+        <a href="event.html"><i class="fa-solid fa-calendar"></i> Semua Event</a>
+        <a href="validasi_status.html"><i class="fa-solid fa-magnifying-glass"></i> Cek Status</a>
+      </div>
+    </div>
+    <div>
+      <strong style="color:var(--gold); font-size:16px;">Tentang Kami</strong>
+      <div class="small">
+        <a href="about.html"><i class="fa-solid fa-info-circle"></i> Visi & Misi</a>
+        <a href="terms.html"><i class="fa-solid fa-file-contract"></i> Syarat & Ketentuan</a>
+        <a href="admin.html"><i class="fa-solid fa-user-shield"></i> Admin</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+  <script src="assets/js/firebase-init.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', async () => {
+      const db = firebase.firestore();
+      const urlParams = new URLSearchParams(window.location.search);
+      const eventId = urlParams.get('id');
+
+      // Element selectors
+      const card = document.getElementById('event-card');
+      const banner = document.getElementById('event-banner');
+      const eventName = document.getElementById('event-name');
+      const eventDates = document.getElementById('event-dates');
+      const eventLocation = document.getElementById('event-location');
+      const eventStatus = document.getElementById('event-status');
+      const eventBatch = document.getElementById('event-batch'); // New selector for batch
+      const eventDescription = document.getElementById('event-description');
+      const registerButton = document.getElementById('register-button');
+      const rundownSection = document.getElementById('rundown-section');
+      const rundownNav = document.getElementById('rundown-nav');
+      const rundownContent = document.getElementById('rundown-content');
+
+      if (!eventId) {
+        card.innerHTML = '<h2>ID Event tidak valid.</h2>';
+        return;
+      }
+
+      try {
+        const eventDoc = await db.collection('events').doc(eventId).get();
+        
+        if (eventDoc.exists) {
+          const event = eventDoc.data();
+          
+          // --- Populate Basic Info ---
+          document.title = `${event.event_name} - Detail Event`;
+          eventName.textContent = event.event_name;
+          
+          let datesText = '';
+          if (event.start_date && event.end_date) {
+            datesText = `${event.start_date}<br>${event.end_date}`;
+          } else if (event.start_date) {
+            datesText = event.start_date;
+          } else if (event.end_date) {
+            datesText = event.end_date;
+          }
+          eventDates.innerHTML = datesText; // Use innerHTML for <br>
+
+          eventLocation.textContent = event.location || 'Online';
+          eventStatus.textContent = event.status || 'Status Tidak Diketahui';
+          eventBatch.textContent = event.event_batch || 'N/A'; // Populate new batch field
+          eventDescription.textContent = event.description || 'Tidak ada deskripsi.';
+
+          // --- Populate Banner Image (Defensive) ---
+          let finalImageUrl = 'assets/event_default.png';
+          const originalLinkFromDB = event.detail_banner_url || event.banner_url;
+          if (originalLinkFromDB && typeof originalLinkFromDB === 'string') {
+            if (originalLinkFromDB.includes('drive.google.com')) {
+              if (originalLinkFromDB.includes('/uc?export=view&id=')) {
+                finalImageUrl = originalLinkFromDB;
+              } else if (originalLinkFromDB.includes('/file/d/')) {
+                try {
+                  const fileId = originalLinkFromDB.split('/d/')[1].split('/')[0];
+                  finalImageUrl = `https://drive.google.com/uc?export=view&id=${fileId}`;
+                } catch (e) { console.error(`Gagal memproses link Google Drive: ${originalLinkFromDB}`, e); }
+              }
+            } else if (originalLinkFromDB.startsWith('http')) {
+              finalImageUrl = originalLinkFromDB;
+            }
+          }
+          banner.src = finalImageUrl;
+          
+          // --- Populate Rundown (Defensive) ---
+          if (event.rundown && Array.isArray(event.rundown) && event.rundown.length > 0) {
+            rundownSection.style.display = 'block';
+            
+            const renderRundownForDay = (dayIndex) => {
+              if (!event.rundown[dayIndex]) return;
+
+              rundownNav.querySelectorAll('button').forEach((btn, index) => {
+                btn.classList.toggle('active', index === dayIndex);
+              });
+
+              const activities = event.rundown[dayIndex].activities;
+              if (!activities || !Array.isArray(activities) || activities.length === 0) {
+                rundownContent.innerHTML = '<ul><li>Tidak ada jadwal untuk hari ini.</li></ul>';
+                return;
+              }
+              
+              let contentHtml = '<ul>';
+              activities.forEach(activity => {
+                if (activity && typeof activity === 'object') {
+                  contentHtml += `
+                    <li>
+                      <div class="rundown-time">${activity.time || ''}</div>
+                      <div class="rundown-description">${activity.description || ''}</div>
+                    </li>
+                  `;
+                }
+              });
+              contentHtml += '</ul>';
+              rundownContent.innerHTML = contentHtml;
+            };
+
+            event.rundown.forEach((dayData, index) => {
+              if (dayData && typeof dayData === 'object') {
+                const dayButton = document.createElement('button');
+                dayButton.textContent = dayData.day || `Hari ${index + 1}`;
+                dayButton.onclick = () => renderRundownForDay(index);
+                rundownNav.appendChild(dayButton);
+              }
+            });
+
+            if (rundownNav.children.length > 0) {
+              renderRundownForDay(0);
+            }
+          }
+
+          // --- Update Register Button State ---
+          if (event.is_active && event.registration_button_enabled) {
+            registerButton.href = `form.html?event_id=${eventId}`;
+          } else {
+            registerButton.textContent = 'Pendaftaran Ditutup';
+            registerButton.classList.add('disabled');
+            registerButton.style.pointerEvents = 'none';
+          }
+
+        } else {
+          card.innerHTML = '<h2>Event tidak ditemukan.</h2>';
+        }
+      } catch (error) {
+        console.error('Error fetching event details:', error);
+        card.innerHTML = '<h2>Gagal memuat detail event. Silakan cek konsol untuk error.</h2>';
+      }
+    });
+  </script>

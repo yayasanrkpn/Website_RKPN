@@ -1,0 +1,61 @@
+{
+    "success": true,
+    "data": [
+        {
+            "id_event": 5,
+            "event_name": "Yatimpreneur",
+            "deskripsi_event": "Indonesia Golden Youth Summit adalah forum kepemudaan internasional yang menghadirkan pemuda-pemudi pilihan dari seluruh Indonesia...",
+            "banner_poster": "https://ieltspresso.com/wp-content/uploads/2024/05/mohd-jon-ramlan-N2SKNqLcgr0-unsplash-scaled.jpg",
+            "link_daftar": "https://lamansia.com/daftar",
+            "nomor_batch": 1,
+            "status_batch": "Segera Hadir",
+            "programs": "Program tersedia",
+            "is_active": 0
+        },
+        {
+            "id_event": 4,
+            "event_name": "Ksatria Qurban",
+            "deskripsi_event": "Indonesia Golden Youth Summit adalah forum kepemudaan internasional yang menghadirkan pemuda-pemudi pilihan dari seluruh Indonesia...",
+            "banner_poster": "https://lh3.googleusercontent.com/rLxDZvw78N3_dwnXU8bYHyXG6lGa8GP3vwNEpaUqB69bNWYxNYTSd9jd2V0xLhO9AR077LzXvf2y4gspI4sNj4GZt0TRj4KAVn_-H3iK5bFBjgR7lFnF-me4JfhhFrdzMgd4e-KbW0AnwDW7UpAZCuE",
+            "link_daftar": "https://lamansia.com/daftar",
+            "nomor_batch": 1,
+            "status_batch": "Segera Hadir",
+            "programs": "Program tersedia",
+            "is_active": 0
+        },
+        {
+            "id_event": 3,
+            "event_name": "Mu'''allim Militan",
+            "deskripsi_event": "Indonesia Golden Youth Summit adalah forum kepemudaan internasional yang menghadirkan pemuda-pemudi pilihan dari seluruh Indonesia...",
+            "banner_poster": "https://suneducationgroup.com/wp-content/uploads/2023/02/UNIVERSITY-MALAYA.jpg",
+            "link_daftar": "https://lamansia.com/daftar",
+            "nomor_batch": 1,
+            "status_batch": "Segera Hadir",
+            "programs": "Program tersedia",
+            "is_active": 0
+        },
+        {
+            "id_event": 2,
+            "event_name": "SDGs Class & Self Development Class",
+            "deskripsi_event": "Forum untuk memberdayakan pemuda dalam berbagai bidang seperti kepemimpinan, inovasi, dan kewirausahaan. Acara ini akan diisi oleh para ahli di bidangnya.",
+            "banner_poster": "https://th.bing.com/th/id/R.934d927113552a892d87c56402c10992?rik=32oYfiSn6iyxIg&riu=http%3a%2f%2fwww.malaysiayellowpages.com%2fm1.jpg&ehk=%2bCYlpME2eC%2bRT%2bIi5iAFH3cGYbu0f7r7qAmSD0y4O4g%3d&risl=&pid=ImgRaw&r=0",
+            "link_daftar": "https://lamansia.com/daftar",
+            "nomor_batch": 1,
+            "status_batch": "Segera Hadir",
+            "programs": "Program tersedia",
+            "is_active": 0
+        },
+        {
+            "id_event": 1,
+            "event_name": "Indonesian Golden Youth Summit",
+            "deskripsi_event": "Indonesia Golden Youth Summit (IGYS) merupakan program kepemudaan unggulan Langkah Emas Indonesia yang dirancang sebagai ruang strategis untuk mengembangkan kapasitas kepemimpinan pemuda, memperluas jejaring internasional, dan menumbuhkan wawasan global. Melalui rangkaian kegiatan seperti International Conference, kunjungan ke World’s Top Universities, Discussion Forum, Project Presentation, City & Cultural Exploration, hingga Social Project dan Awarding Delegates yang memberikan ruang kompetitif sehat bagi para peserta untuk menampilkan kemampuan terbaik yang mereka miliki.",
+            "banner_poster": "https://i.ibb.co.com/DDN0pgfF/Whats-App-Image-2025-10-10-at-14-44-28.jpg",
+            "link_daftar": "https://lamansia.com/daftar?id_event=1",
+            "nomor_batch": 1,
+            "status_batch": "Pendaftaran",
+            "programs": "Program tersedia",
+            "is_active": 1
+        }
+    ],
+    "total": 5
+}

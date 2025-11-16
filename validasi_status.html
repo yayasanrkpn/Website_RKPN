@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cek Status Pendaftaran</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/style.css" />
+
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+  <script src="assets/js/firebase-init.js"></script>
+</head>
+<body class="validation-page-body">
+  <header>
+    <div class="container nav">
+      <div class="hamburger-menu" id="hamburger-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="brand">
+        <img alt="GYS Logo" src="assets/img/gys.png"/>
+        <div class="title">Global <span>Youth</span> Summit</div>
+      </div>
+      <nav class="menu">
+        <a href="index.html">Home</a>
+        <a href="index.html#visi">Visi &amp; Misi</a>
+        <a href="index.html#program">Program Kami</a>
+        <a href="validasi_status.html">Cek Status</a>
+        <a href="https://drive.google.com/file/d/1Ec1YOarCR3zkqp08xbGU4hiFKIn4teKa/view?usp=sharing" target="_blank">Legalitas</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Overlay -->
+  <div class="mobile-menu-overlay" id="mobile-menu-overlay"></div>
+
+  <!-- MOBILE MENU -->
+  <nav class="mobile-menu" id="mobile-menu">
+    <div class="mobile-menu-header">
+      <div class="brand">
+        <img alt="GYS Logo" src="assets/mascot.png"/>
+      </div>
+      <button id="close-btn" aria-label="Tutup Menu">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+    </div>
+
+    <a href="index.html">Home</a>
+    <a href="index.html#visi">Visi &amp; Misi</a>
+    <a href="index.html#program">Program Kami</a>
+    <a href="validasi_status.html">Cek Status</a>
+    <a href="https://drive.google.com/file/d/1Ec1YOarCR3zkqp08xbGU4hiFKIn4teKa/view?usp=sharing" target="_blank">Legalitas</a>
+
+    <a aria-label="Hubungi Kami" class="wa-mobile" href="https://wa.me/6288213976979?text=Saya%20tertarik%20dengan%20event%20ini">
+      <i class="fab fa-whatsapp"></i> <span>Hubungi via WhatsApp</span>
+    </a>
+  </nav>
+
+  <main class="validation-page-main">
+    <div class="login-container">
+      <div class="login-box">
+        <h4>Cek Status</h4>
+
+        <div class="logo-container">
+          <img src="assets/mascot.png" alt="Logo IGYS">
+        </div>
+
+        <p class="description">🔍 Cek Langkahmu Menuju Delegasi IGYS!</p>
+
+        
+        <form id="status-form">
+          <div class="mb-3 text-start">
+            <label for="no_pendaftaran" class="form-label">Nomor Pendaftaran</label>
+            <div class="input-group">
+              <input type="text" class="form-control" id="no_pendaftaran" name="no_pendaftaran" placeholder="Masukkan nomor pendaftaran" required>
+              <span class="input-group-text" id="status-icon"><i class="bi bi-person-fill-lock"></i></span>
+            </div>
+          </div>
+
+          <div class="mb-3 text-start">
+            <label for="tgl_lahir" class="form-label">Tanggal Lahir</label>
+            <input type="date" class="form-control" id="tgl_lahir" name="tgl_lahir" required>
+          </div>
+
+          <button type="submit" class="btn btn-primary w-100">Cari Status</button>
+        </form>
+        <div id="status-result" class="mt-4"></div>
+      </div>
+    </div>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/validasi_status.js"></script>
+
+  <footer>
+  <div class="footer-in">
+    <div>
+      <div class="footer-brand">
+        <img src="assets/img/gys.png" alt="logo" style="height:32px"> 
+        <strong style="color:var(--paper); font-size: 16px;">Global Youth Summit</strong>
+      </div>
+      <div class="footer-contact-info small">
+        <p>
+          <strong style="color: var(--gold);">Alamat:</strong><br>
+          Jl. Rasamala Blok N.8, RT.03/RW.04, Kedunghalang, Kec. Bogor Utara, Kota Bogor, Jawa Barat 16158
+        </p>
+        <p>
+          <strong style="color: var(--gold);">Kontak:</strong><br>
+          Telp: 088213976979<br>
+          Email: hallo.globalyouth@gmail.com
+        </p>
+      </div>
+      <div class="social-links">
+        <a href="mailto:hallo.globalyouth@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+          <a href="https://www.instagram.com/Globalyouthsummit_id/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://www.tiktok.com/@" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
+        <a href="https://drive.google.com/file/d/1XhFN_9BF3Sf3MKr3VbWWKSSjc87mGMVh/view?usp=sharing" target="_blank" title="Akta Notaris"><i class="fa-solid fa-file-alt"></i></a>
+      </div>
+    </div>
+    <div>
+      <strong style="color:var(--gold); font-size:16px;">Navigasi Cepat</strong>
+      <div class="small">
+        <a href="index.html"><i class="fa-solid fa-house"></i> Home</a>
+        <a href="event.html"><i class="fa-solid fa-calendar"></i> Semua Event</a>
+        <a href="validasi_status.html"><i class="fa-solid fa-magnifying-glass"></i> Cek Status</a>
+      </div>
+    </div>
+    <div>
+      <strong style="color:var(--gold); font-size:16px;">Tentang Kami</strong>
+      <div class="small">
+        <a href="about.html"><i class="fa-solid fa-info-circle"></i> Visi & Misi</a>
+        <a href="terms.html"><i class="fa-solid fa-file-contract"></i> Syarat & Ketentuan</a>
+        <a href="admin.html"><i class="fa-solid fa-user-shield"></i> Admin</a>
+      </div>
+    </div>
+  </div>
+</footer>
+</body>
+</html>

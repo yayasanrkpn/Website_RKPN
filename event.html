@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Daftar Event - Yayasan Langkah Emas Indonesia</title>
+  <link rel="icon" type="image/png" href="assets/lamansia.png">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <!-- Overlay -->
+  <div class="mobile-menu-overlay" id="mobile-menu-overlay"></div>
+
+  <!-- HEADER / NAVBAR -->
+  <header>
+    <div class="container nav">
+      <div class="hamburger-menu" id="hamburger-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="brand">
+        <img alt="GYS Logo" src="assets/img/gys.png"/>
+        <div class="title">Global <span>Youth</span> Summit</div>
+      </div>
+      <nav class="menu">
+        <a href="index.html">Home</a>
+        <a href="index.html#visi">Visi &amp; Misi</a>
+        <a href="index.html#program">Program Kami</a>
+        <a href="validasi_status.html">Cek Status</a>
+        <a href="https://drive.google.com/file/d/1Ec1YOarCR3zkqp08xbGU4hiFKIn4teKa/view?usp=sharing" target="_blank">Legalitas</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- MOBILE MENU -->
+  <nav class="mobile-menu" id="mobile-menu">
+    <div class="mobile-menu-header">
+      <div class="brand">
+        <img alt="GYS Logo" src="assets/mascot.png"/>
+      </div>
+      <button id="close-btn" aria-label="Tutup Menu">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+    </div>
+
+    <a href="index.html">Home</a>
+    <a href="index.html#visi">Visi &amp; Misi</a>
+    <a href="index.html#program">Program Kami</a>
+    <a href="validasi_status.html">Cek Status</a>
+    <a href="https://drive.google.com/file/d/1Ec1YOarCR3zkqp08xbGU4hiFKIn4teKa/view?usp=sharing" target="_blank">Legalitas</a>
+
+    <a aria-label="Hubungi Kami" class="wa-mobile" href="https://wa.me/6288213976979?text=Saya%20tertarik%20dengan%20event%20ini">
+      <i class="fab fa-whatsapp"></i> <span>Hubungi via WhatsApp</span>
+    </a>
+  </nav>
+
+  <main class="wrap">
+    <section class="hero" style="padding-top: 40px; padding-bottom: 40px; text-align: center;">
+        <h2>Event Kami</h2>
+        <p>Jelajahi berbagai program menarik dari Yayasan Langkah Emas Indonesia.</p>
+    </section>
+    <div class="event-grid" id="event-grid-container">
+      <!-- Events will be loaded here by JavaScript -->
+    </div>
+    <p id="message" class="message" style="text-align: center; padding: 40px;">Memuat data event...</p>
+  </main>
+
+  <footer>
+  <div class="footer-in">
+    <div>
+      <div class="footer-brand">
+        <img src="assets/img/gys.png" alt="logo" style="height:32px"> 
+        <strong style="color:var(--paper); font-size: 16px;">Global Youth Summit</strong>
+      </div>
+      <div class="footer-contact-info small">
+        <p>
+          <strong style="color: var(--gold);">Alamat:</strong><br>
+          Jl. Rasamala Blok N.8, RT.03/RW.04, Kedunghalang, Kec. Bogor Utara, Kota Bogor, Jawa Barat 16158
+        </p>
+        <p>
+          <strong style="color: var(--gold);">Kontak:</strong><br>
+          Telp: 088213976979<br>
+          Email: hallo.globalyouth@gmail.com
+        </p>
+      </div>
+      <div class="social-links">
+        <a href="mailto:hallo.globalyouth@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+          <a href="https://www.instagram.com/Globalyouthsummit_id/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://www.tiktok.com/@" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
+        <a href="https://drive.google.com/file/d/1XhFN_9BF3Sf3MKr3VbWWKSSjc87mGMVh/view?usp=sharing" target="_blank" title="Akta Notaris"><i class="fa-solid fa-file-alt"></i></a>
+      </div>
+    </div>
+    <div>
+      <strong style="color:var(--gold); font-size:16px;">Navigasi Cepat</strong>
+      <div class="small">
+        <a href="index.html"><i class="fa-solid fa-house"></i> Home</a>
+        <a href="event.html"><i class="fa-solid fa-calendar"></i> Semua Event</a>
+        <a href="validasi_status.html"><i class="fa-solid fa-magnifying-glass"></i> Cek Status</a>
+      </div>
+    </div>
+    <div>
+      <strong style="color:var(--gold); font-size:16px;">Tentang Kami</strong>
+      <div class="small">
+        <a href="about.html"><i class="fa-solid fa-info-circle"></i> Visi & Misi</a>
+        <a href="terms.html"><i class="fa-solid fa-file-contract"></i> Syarat & Ketentuan</a>
+        <a href="admin.html"><i class="fa-solid fa-user-shield"></i> Admin</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+  <script src="assets/js/firebase-init.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const eventGridContainer = document.getElementById('event-grid-container');
+      const message = document.getElementById('message');
+      if (eventGridContainer) {
+        db.collection('events').get().then(snapshot => {
+          if (snapshot.empty) {
+            message.textContent = 'Belum ada event yang tersedia.';
+            return;
+          }
+          message.style.display = 'none';
+          snapshot.forEach(doc => {
+            const event = { id: doc.id, ...doc.data() };
+            const card = document.createElement('div');
+            card.className = 'event-card-item'; 
+            
+            const truncatedDesc = event.description ? event.description.substring(0, 100) : 'Tidak ada deskripsi.';
+
+            // --- Google Drive URL Processing ---
+            let finalImageUrl = 'assets/event_default.png';
+            const originalLinkFromDB = event.homepage_banner_url || event.banner_url;
+            if (originalLinkFromDB && typeof originalLinkFromDB === 'string') {
+              if (originalLinkFromDB.includes('drive.google.com')) {
+                if (originalLinkFromDB.includes('/uc?export=view&id=')) {
+                  finalImageUrl = originalLinkFromDB;
+                } else if (originalLinkFromDB.includes('/file/d/')) {
+                  try {
+                    const fileId = originalLinkFromDB.split('/d/')[1].split('/')[0];
+                    finalImageUrl = `https://drive.google.com/uc?export=view&id=${fileId}`;
+                  } catch (e) { console.error(`Gagal memproses link Google Drive: ${originalLinkFromDB}`, e); }
+                }
+              } else if (originalLinkFromDB.startsWith('http')) {
+                finalImageUrl = originalLinkFromDB;
+              }
+            }
+
+            card.innerHTML = `
+              <img src="${finalImageUrl}" alt="${event.event_name}" style="width:100%; height: 200px; object-fit: cover;">
+              <div class="event-card-content" style="padding: 15px; display: flex; flex-direction: column; flex-grow: 1;">
+                  <h3 style="font-size: 18px;">${event.event_name}</h3>
+                  <p style="font-size: 14px; color: var(--muted); flex-grow: 1;">${truncatedDesc}...</p>
+                  <a href="event_detail.html?id=${event.id}" class="btn btn-detail" style="margin-top: 15px; width: 100%;">Lihat Detail</a>
+              </div>
+            `;
+            eventGridContainer.appendChild(card);
+          });
+        }).catch(error => {
+          console.error("Error fetching events for grid:", error);
+          message.textContent = 'Gagal memuat event.';
+        });
+      }
+    });
+  </script>
+</body>
+</html>

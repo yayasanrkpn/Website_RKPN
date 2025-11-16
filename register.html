@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Daftar Event - Yayasan Langkah Emas Indonesia</title>
+  <meta name="description" content="Formulir pendaftaran untuk event Yayasan Langkah Emas Indonesia.">
+  <meta name="author" content="Yayasan Langkah Emas Indonesia">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/lamansia.png">
+
+  <!-- Fonts & Icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <style>
+    body {
+      background-color: #f0f2f5;
+    }
+    .main-content {
+      padding: 40px 20px;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+    .registration-form {
+      background: #fff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    }
+    .form-group {
+      margin-bottom: 20px;
+    }
+    .form-group label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: 600;
+    }
+    .form-group input,
+    .form-group select {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="main-content">
+    <div class="registration-form">
+      <h2>Pendaftaran Event</h2>
+      <form id="registration-form">
+        <div class="form-group">
+          <label for="event-selection">Pilih Event</label>
+          <select id="event-selection" required></select>
+        </div>
+        <div class="form-group">
+          <label for="name">Nama Lengkap</label>
+          <input type="text" id="name" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" required>
+        </div>
+        <div class="form-group">
+          <label for="registration-number">Nomor Pendaftaran</label>
+          <input type="text" id="registration-number" required>
+        </div>
+        <div class="form-group">
+          <label for="dob">Tanggal Lahir</label>
+          <input type="date" id="dob" required>
+        </div>
+        <button type="submit" class="btn btn-primary">Daftar</button>
+      </form>
+      <div id="registration-result" class="mt-4"></div>
+    </div>
+  </div>
+
+</body>
+
+</html>

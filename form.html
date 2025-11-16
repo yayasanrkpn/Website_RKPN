@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Formulir Pendaftaran -Global Youth Summit</title>
+  <link rel="icon" type="image/png" href="assets/lamansia.png">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <!-- Overlay -->
+  <div class="mobile-menu-overlay" id="mobile-menu-overlay"></div>
+
+  <!-- HEADER / NAVBAR -->
+  <header>
+    <div class="container nav">
+      <div class="hamburger-menu" id="hamburger-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="brand">
+        <img alt="GYS Logo" src="assets/img/gys.png"/>
+        <div class="title">Global <span>Youth</span> Summit</div>
+      </div>
+      <nav class="menu">
+        <a href="index.html">Home</a>
+        <a href="index.html#visi">Visi &amp; Misi</a>
+        <a href="index.html#program">Program Kami</a>
+        <a href="validasi_status.html">Cek Status</a>
+        <a href="https://drive.google.com/file/d/1Ec1YOarCR3zkqp08xbGU4hiFKIn4teKa/view?usp=sharing" target="_blank">Legalitas</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- MOBILE MENU -->
+  <nav class="mobile-menu" id="mobile-menu">
+    <div class="mobile-menu-header">
+      <div class="brand">
+        <img alt="GYS Logo" src="assets/mascot.png"/>
+      </div>
+      <button id="close-btn" aria-label="Tutup Menu">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+    </div>
+
+    <a href="index.html">Home</a>
+    <a href="index.html#visi">Visi &amp; Misi</a>
+    <a href="index.html#program">Program Kami</a>
+    <a href="validasi_status.html">Cek Status</a>
+    <a href="https://drive.google.com/file/d/1Ec1YOarCR3zkqp08xbGU4hiFKIn4teKa/view?usp=sharing" target="_blank">Legalitas</a>
+
+    <a aria-label="Hubungi Kami" class="wa-mobile" href="https://wa.me/6288213976979?text=Saya%20tertarik%20dengan%20event%20ini">
+      <i class="fab fa-whatsapp"></i> <span>Hubungi via WhatsApp</span>
+    </a>
+  </nav>
+
+  <main class="form-container">
+    <div class="card">
+      <h3 class="form-section-heading" style="font-size: 24px; text-align: center; margin-bottom: 24px;">Formulir Pendaftaran</h3>
+      <div class="form-section-divider"></div>
+
+      <div class="form-group form-group-inline">
+        <input type="checkbox" id="terms" name="terms" required>
+        <label for="terms">Saya setuju dengan syarat dan ketentuan</label>
+      </div>
+
+      <form id="registration-form">
+        <h4 class="form-section-heading">Data Diri</h4>
+        <div class="form-section-divider"></div>
+        <div class="form-group">
+          <label for="nama">Nama Lengkap *</label>
+          <input type="text" id="nama" name="nama" required disabled>
+        </div>
+        <div class="form-group">
+          <label for="email">Email *</label>
+          <input type="email" id="email" name="email" required disabled>
+        </div>
+        <div class="form-group">
+          <label for="telepon">Nomor WhatsApp *</label>
+          <input type="tel" id="telepon" name="telepon" required disabled>
+        </div>
+        <div class="form-group">
+          <label for="gender">Jenis Kelamin *</label>
+          <select id="gender" name="gender" required disabled>
+            <option value="">-- Pilih Jenis Kelamin --</option>
+            <option value="Laki-laki">Laki-laki</option>
+            <option value="Perempuan">Perempuan</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="dob">Tanggal Lahir *</label>
+          <input type="date" id="dob" name="dob" required disabled>
+        </div>
+        <div class="form-group">
+          <label for="kota">Kota/Kabupaten *</label>
+          <input type="text" id="kota" name="kota" required disabled>
+        </div>
+        <div class="form-group">
+          <label for="provinsi">Provinsi *</label>
+          <input type="text" id="provinsi" name="provinsi" required disabled>
+        </div>
+        <div class="form-group">
+          <label for="pekerjaan">Pekerjaan *</label>
+          <input type="text" id="pekerjaan" name="pekerjaan" required disabled>
+        </div>
+        <div class="form-group">
+          <label for="instansi">Asal Instansi *</label>
+          <input type="text" id="instansi" name="instansi" required disabled>
+        </div>
+
+        <h4 class="form-section-heading">Pilihan Event</h4>
+        <div class="form-section-divider"></div>
+        <div class="form-group">
+          <label for="event-selection">Pilih Event *</label>
+          <select id="event-selection" name="event-selection" required disabled>
+            <option value="">-- Memuat Event --</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="info">Dapat Info dari Mana? *</label>
+          <input type="text" id="info" name="info" required disabled>
+        </div>
+
+        <h4 class="form-section-heading">Social Media</h4>
+        <div class="form-section-divider"></div>
+        <div class="form-group">
+          <label for="instagram">Username Instagram *</label>
+          <input type="text" id="instagram" name="instagram" required disabled>
+        </div>
+        <div class="form-group">
+          <label for="tiktok">Username TikTok</label>
+          <input type="text" id="tiktok" name="tiktok" disabled>
+        </div>
+
+       
+       
+        <div class="form-group">
+          <label for="motivasi">Motivasi Mengikuti Program *</label>
+          <textarea id="motivasi" name="motivasi" rows="4" required disabled></textarea>
+        </div>
+
+       
+
+       
+
+        <h4 class="form-section-heading">Jalur Pendaftaran</h4>
+        <div class="form-section-divider"></div>
+        <div class="form-group form-group-inline">
+          <input type="radio" id="jalur-eksklusif" name="jalur" value="eksklusif" disabled>
+          <label for="jalur-eksklusif">Jalur Ekslusif</label>
+          <input type="radio" id="jalur-poster" name="jalur" value="poster" disabled>
+          <label for="jalur-poster">Jalur Upload Poster</label>
+        </div>
+
+        <div id="jalur-eksklusif-content" class="exclusive-payment-section" style="display: none;">
+          <p>Silakan melakukan payment sebesar Rp.35.000</p>
+          <p>via Gopay dengan nomor 0813-2091-799 a.n Globalyouthsummit</p>
+          <div class="form-group">
+            <label for="bukti-pembayaran">Upload Bukti Pembayaran *</label>
+            <input type="file" id="bukti-pembayaran" name="bukti-pembayaran" disabled>
+            <div class="file-preview" id="bukti-pembayaran-preview"></div>
+          </div>
+          <p>Setelah upload, Anda bisa langsung klik Kumpulkan Berkas di bawah.</p>
+        </div>
+
+        <div id="jalur-poster-content" class="poster-verification-section" style="display: none;">
+          <p>Langkah Verifikasi Upload</p>
+          <div class="form-group form-group-inline">
+            <input type="checkbox" id="ig-feed" name="ig-feed" disabled>
+            <label for="ig-feed">Saya sudah posting twibbon di feed instagram.</label>
+            <ul>
+              <li>Slide 1 : Twibbon</li>
+              <li>Slide 2 : Poster Pendaftaran</li>
+              <li>Tag @Globalyouthsummit_id saat posting</li>
+            </ul>
+          </div>
+          <div class="form-group form-group-inline">
+            <input type="checkbox" id="ig-story" name="ig-story" disabled>
+            <label for="ig-story">Saya sudah upload poster di Instagram Story.</label>
+            <ul>
+              <li>Tag @Globalyouthsummit_id saat posting</li>
+            </ul>
+            <div class="form-section-divider"></div>
+        <div class="form-group">
+          <label for="twibbon">Link Twibbon *</label>
+          <input type="url" id="twibbon" name="twibbon" placeholder="https://instagram.com/p/..." required disabled>
+        </div>
+        <div class="form-group">
+          <label for="bukti">Upload Bukti Follow & Share *</label>
+          <input type="file" id="bukti" name="bukti" accept="image/*" required disabled>
+          <div class="file-preview" id="bukti-preview"></div>
+        </div>
+          </div>
+          <div class="form-group">
+            <button type="submit" class="btn success" disabled>Verifikasi & Lanjutkan</button>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <button type="submit" class="btn primary" id="submit-button" disabled>
+            <span id="button-text">Daftar Sekarang</span>
+            <div class="spinner" id="spinner" style="display: none;"></div>
+          </button>
+        </div>
+      </form>
+    </div>
+    <div id="registration-result"></div>
+  </main>
+
+  <footer>
+  <div class="footer-in">
+    <div>
+      <div class="footer-brand">
+        <img src="assets/img/gys.png" alt="logo" style="height:32px"> 
+        <strong style="color:var(--paper); font-size: 16px;">Global Youth Summit</strong>
+      </div>
+      <div class="footer-contact-info small">
+        <p>
+          <strong style="color: var(--gold);">Alamat:</strong><br>
+          Jl. Rasamala Blok N.8, RT.03/RW.04, Kedunghalang, Kec. Bogor Utara, Kota Bogor, Jawa Barat 16158
+        </p>
+        <p>
+          <strong style="color: var(--gold);">Kontak:</strong><br>
+          Telp: 088213976979<br>
+          Email: hallo.globalyouth@gmail.com
+        </p>
+      </div>
+      <div class="social-links">
+        <a href="mailto:hallo.globalyouth@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+          <a href="https://www.instagram.com/Globalyouthsummit_id/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://www.tiktok.com/@" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
+        <a href="https://drive.google.com/file/d/1XhFN_9BF3Sf3MKr3VbWWKSSjc87mGMVh/view?usp=sharing" target="_blank" title="Akta Notaris"><i class="fa-solid fa-file-alt"></i></a>
+      </div>
+    </div>
+    <div>
+      <strong style="color:var(--gold); font-size:16px;">Navigasi Cepat</strong>
+      <div class="small">
+        <a href="index.html"><i class="fa-solid fa-house"></i> Home</a>
+        <a href="event.html"><i class="fa-solid fa-calendar"></i> Semua Event</a>
+        <a href="validasi_status.html"><i class="fa-solid fa-magnifying-glass"></i> Cek Status</a>
+      </div>
+    </div>
+    <div>
+      <strong style="color:var(--gold); font-size:16px;">Tentang Kami</strong>
+      <div class="small">
+        <a href="about.html"><i class="fa-solid fa-info-circle"></i> Visi & Misi</a>
+        <a href="terms.html"><i class="fa-solid fa-file-contract"></i> Syarat & Ketentuan</a>
+        <a href="admin.html"><i class="fa-solid fa-user-shield"></i> Admin</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-storage.js"></script>
+  <script src="assets/js/firebase-init.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      // --- FORM ELEMENTS ---
+      const termsCheckbox = document.getElementById('terms');
+      const form = document.getElementById('registration-form');
+      const formElements = form.elements;
+      const eventSelection = document.getElementById('event-selection');
+      const buktiInput = document.getElementById('bukti');
+      const buktiPreview = document.getElementById('bukti-preview');
+      const buktiPembayaranInput = document.getElementById('bukti-pembayaran');
+      const buktiPembayaranPreview = document.getElementById('bukti-pembayaran-preview');
+      const submitButton = document.getElementById('submit-button');
+      const buttonText = document.getElementById('button-text');
+      const spinner = document.getElementById('spinner');
+      const registrationResult = document.getElementById('registration-result');
+
+      // --- FIREBASE INSTANCE ---
+      const db = firebase.firestore();
+      const storage = firebase.storage();
+
+      // --- HELPER: Get Event ID from URL ---
+      const urlParams = new URLSearchParams(window.location.search);
+      const eventIdFromUrl = urlParams.get('event_id');
+
+      // --- EVENT LISTENER: Event Selection Change ---
+      eventSelection.addEventListener('change', () => {
+        updatePaymentInfo(eventSelection.value);
+      });
+
+      // --- FUNCTION: Load Events ---
+      async function loadEventsForRegistration() {
+        try {
+          const eventsSnapshot = await db.collection('events').where('is_active', '==', true).get();
+          const events = eventsSnapshot.docs.map(doc => ({ id: doc.id, ...doc.data() }));
+          
+          eventSelection.innerHTML = ''; // Clear dropdown
+          if (events.length === 0) {
+            eventSelection.innerHTML = '<option value="">Tidak ada event tersedia</option>';
+            return;
+          }
+
+          const defaultOption = document.createElement('option');
+          defaultOption.textContent = '-- Pilih Event --';
+          defaultOption.value = '';
+          eventSelection.appendChild(defaultOption);
+
+          events.forEach(event => {
+            const option = document.createElement('option');
+            option.value = event.id;
+            option.textContent = event.event_name;
+            eventSelection.appendChild(option);
+          });
+
+          // Pre-select event if ID is in URL
+          if (eventIdFromUrl && events.some(e => e.id === eventIdFromUrl)) {
+            eventSelection.value = eventIdFromUrl;
+            updatePaymentInfo(eventIdFromUrl); // Initial payment info update
+          }
+
+        } catch (error) {
+          console.error('Error loading events:', error);
+          eventSelection.innerHTML = '<option value="">Gagal memuat event</option>';
+        }
+      }
+
+      // --- FUNCTION: Validate Form ---
+      function validateForm() {
+        const requiredFields = [
+          { id: 'nama', name: 'Nama Lengkap' },
+          { id: 'email', name: 'Email' },
+          { id: 'telepon', name: 'Nomor WhatsApp' },
+          { id: 'gender', name: 'Jenis Kelamin' },
+          { id: 'dob', name: 'Tanggal Lahir' },
+          { id: 'kota', name: 'Kota/Kabupaten' },
+          { id: 'provinsi', name: 'Provinsi' },
+          { id: 'pekerjaan', name: 'Pekerjaan' },
+          { id: 'instansi', name: 'Asal Instansi' },
+          { id: 'event-selection', name: 'Pilihan Event' },
+          { id: 'info', name: 'Info' },
+          { id: 'instagram', name: 'Username Instagram' },
+          { id: 'twibbon', name: 'Link Twibbon' },
+          { id: 'bukti', name: 'Bukti Follow & Share' },
+          { id: 'motivasi', name: 'Motivasi' },
+        ];
+
+        for (const field of requiredFields) {
+          const element = document.getElementById(field.id);
+          if (element && !element.value.trim()) {
+            alert(`${field.name} wajib diisi.`);
+            element.focus();
+            return false;
+          }
+        }
+
+        // Specific validations
+        const email = document.getElementById('email').value;
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!emailRegex.test(email)) {
+          alert('Format email tidak valid.');
+          document.getElementById('email').focus();
+          return false;
+        }
+
+        const telepon = document.getElementById('telepon').value;
+        if (telepon.length < 10) {
+          alert('Nomor WhatsApp harus memiliki minimal 10 digit.');
+          document.getElementById('telepon').focus();
+          return false;
+        }
+
+        const motivasi = document.getElementById('motivasi').value;
+        if (motivasi.trim().length < 30) {
+          alert('Motivasi harus memiliki minimal 30 karakter.');
+          document.getElementById('motivasi').focus();
+          return false;
+        }
+        
+        const metodeOnline = document.getElementById('online');
+        const metodeOffline = document.getElementById('offline');
+        if (metodeOnline && metodeOffline && !metodeOnline.checked && !metodeOffline.checked) {
+            alert('Pilihan Metode Pendaftaran wajib diisi.');
+            return false;
+        }
+
+        const jalurEksklusif = document.getElementById('jalur-eksklusif');
+        const jalurPoster = document.getElementById('jalur-poster');
+        if (jalurEksklusif && jalurPoster && !jalurEksklusif.checked && !jalurPoster.checked) {
+            alert('Jalur Pendaftaran wajib diisi.');
+            return false;
+        }
+
+        if (jalurEksklusif && jalurEksklusif.checked) {
+            const buktiPembayaran = document.getElementById('bukti-pembayaran');
+            if (buktiPembayaran && !buktiPembayaran.value.trim()) {
+                alert('Bukti Pembayaran wajib diisi untuk Jalur Eksklusif.');
+                buktiPembayaran.focus();
+                return false;
+            }
+        }
+
+        if (jalurPoster && jalurPoster.checked) {
+            const igFeed = document.getElementById('ig-feed');
+            const igStory = document.getElementById('ig-story');
+            if (igFeed && !igFeed.checked) {
+                alert('Anda harus mengkonfirmasi posting twibbon di feed Instagram.');
+                igFeed.focus();
+                return false;
+            }
+            if (igStory && !igStory.checked) {
+                alert('Anda harus mengkonfirmasi upload poster di Instagram Story.');
+                igStory.focus();
+                return false;
+            }
+        }
+
+        return true;
+      }
+
+      // --- EVENT LISTENER: File Upload Preview ---
+      function setupFilePreview(inputFileElement, previewElement) {
+        inputFileElement.addEventListener('change', () => {
+          if (inputFileElement.files.length > 0) {
+            previewElement.textContent = `File terpilih: ${inputFileElement.files[0].name}`;
+          } else {
+            previewElement.textContent = '';
+          }
+        });
+      }
+
+      setupFilePreview(buktiInput, buktiPreview);
+      if (buktiPembayaranInput && buktiPembayaranPreview) {
+        setupFilePreview(buktiPembayaranInput, buktiPembayaranPreview);
+      }
+
+      // --- EVENT LISTENER: Form Submission ---
+      form.addEventListener('submit', async (e) => {
+        e.preventDefault();
+        
+        if (!validateForm()) {
+          return;
+        }
+
+        submitButton.disabled = true;
+        buttonText.textContent = 'Mengirim...';
+        spinner.style.display = 'block';
+
+        const eventId = eventSelection.value;
+        const participantData = {};
+        for (const element of formElements) {
+          if (element.name && element.type !== 'submit' && element.type !== 'file') {
+             if (element.type === 'checkbox' || element.type === 'radio') {
+                if(element.checked) {
+                    participantData[element.name] = element.value;
+                }
+             } else {
+                participantData[element.name] = element.value;
+             }
+          }
+        }
+        participantData.status = 'Registered';
+        participantData.created_at = firebase.firestore.FieldValue.serverTimestamp();
+
+        const regNumberPrefix = "IGYS24";
+        const randomNumber = Math.floor(100000 + Math.random() * 900000);
+        const registrationNumber = `${regNumberPrefix}-${randomNumber}`;
+        participantData.nomor_pendaftaran = registrationNumber;
+
+        try {
+          const nameSlug = participantData.nama.toLowerCase().replace(/[^a-z0-9\s-]/g, '').replace(/\s+/g, '-');
+          const uniqueSuffix = Date.now().toString().slice(-6);
+          const customDocId = `${nameSlug}-${uniqueSuffix}`;
+
+          // Upload files to Firebase Storage
+          const buktiFile = buktiInput.files[0];
+          if (buktiFile) {
+            const storageRef = storage.ref(`bukti/${customDocId}-${buktiFile.name}`);
+            const snapshot = await storageRef.put(buktiFile);
+            participantData.buktiUrl = await snapshot.ref.getDownloadURL();
+          }
+
+          const buktiPembayaranFile = buktiPembayaranInput.files[0];
+          if (buktiPembayaranFile) {
+            const storageRef = storage.ref(`bukti-pembayaran/${customDocId}-${buktiPembayaranFile.name}`);
+            const snapshot = await storageRef.put(buktiPembayaranFile);
+            participantData.buktiPembayaranUrl = await snapshot.ref.getDownloadURL();
+          }
+
+          await db.collection('events').doc(eventId).collection('participants').doc(customDocId).set(participantData);
+          
+          form.style.display = 'none';
+          registrationResult.innerHTML = `
+            <div style="padding: 20px; border: 1px solid green; background-color: #e8f5e9; text-align: center; border-radius: 8px;">
+              <h4 style="color: green; font-size: 1.2em;">Pendaftaran Berhasil!</h4>
+              <p>Terima kasih telah mendaftar. Mohon simpan nomor pendaftaran Anda untuk melakukan pengecekan status.</p>
+              <p style="margin-top: 15px;">Nomor Pendaftaran Anda:</p>
+              <h3 style="background: #fff; padding: 10px; border: 1px dashed #ccc; display: inline-block; margin-top: 5px;">${registrationNumber}</h3>
+            </div>
+          `;
+          alert('Pendaftaran berhasil dikirim!');
+
+        } catch (error) {
+          console.error('Error registering participant:', error);
+          alert('Pendaftaran gagal. Silakan coba lagi. Error: ' + error.message);
+          submitButton.disabled = false;
+          buttonText.textContent = 'Daftar Sekarang';
+          spinner.style.display = 'none';
+        }
+      });
+
+      const jalurEksklusifRadio = document.getElementById('jalur-eksklusif');
+      const jalurPosterRadio = document.getElementById('jalur-poster');
+      const jalurEksklusifContent = document.getElementById('jalur-eksklusif-content');
+      const jalurPosterContent = document.getElementById('jalur-poster-content');
+
+      // --- FUNCTION: Update Payment Info ---
+      async function updatePaymentInfo(eventId) {
+        if (!eventId) {
+          jalurEksklusifContent.querySelector('p:first-child').textContent = 'Silakan melakukan payment sebesar Rp...';
+          return;
+        }
+        try {
+          const eventDoc = await db.collection('events').doc(eventId).get();
+          if (eventDoc.exists) {
+            const eventData = eventDoc.data();
+            console.log('eventData.exclusive_payment_amount from Firestore:', eventData.exclusive_payment_amount);
+            const paymentAmount = eventData.exclusive_payment_amount || 0; // Ensure it's a number, default to 0
+            console.log('paymentAmount before formatting:', paymentAmount);
+            const formattedAmount = new Intl.NumberFormat('id-ID', { style: 'currency', currency: 'IDR' }).format(paymentAmount);
+            console.log('formattedAmount:', formattedAmount);
+            jalurEksklusifContent.querySelector('p:first-child').textContent = `Silakan melakukan payment sebesar ${formattedAmount}`;
+          }
+        } catch (error) {
+          console.error("Error fetching payment info:", error);
+        }
+      }
+
+      const igFeedCheckbox = document.getElementById('ig-feed');
+      const igStoryCheckbox = document.getElementById('ig-story');
+      const verifikasiButton = jalurPosterContent ? jalurPosterContent.querySelector('.btn.success') : null;
+
+      function updateFormFieldsState() {
+        const isTermsChecked = termsCheckbox.checked;
+        const isJalurEksklusif = jalurEksklusifRadio.checked;
+        const isJalurPoster = jalurPosterRadio.checked;
+
+        for (let i = 0; i < formElements.length; i++) {
+          const element = formElements[i];
+          if (element.id !== 'terms' && element.name !== 'jalur' && element.type !== 'submit') {
+            element.disabled = !isTermsChecked;
+          }
+        }
+        
+        if (jalurEksklusifRadio) jalurEksklusifRadio.disabled = !isTermsChecked;
+        if (jalurPosterRadio) jalurPosterRadio.disabled = !isTermsChecked;
+        if (submitButton) submitButton.disabled = !isTermsChecked;
+
+        if (jalurEksklusifContent) {
+            if (isJalurEksklusif && isTermsChecked) {
+                jalurEksklusifContent.style.display = 'block';
+                if (buktiPembayaranInput) buktiPembayaranInput.disabled = false;
+            } else {
+                jalurEksklusifContent.style.display = 'none';
+                if (buktiPembayaranInput) buktiPembayaranInput.disabled = true;
+            }
+        }
+
+        if (jalurPosterContent) {
+            if (isJalurPoster && isTermsChecked) {
+                jalurPosterContent.style.display = 'block';
+                if (igFeedCheckbox) igFeedCheckbox.disabled = false;
+                if (igStoryCheckbox) igStoryCheckbox.disabled = false;
+                if (verifikasiButton) verifikasiButton.disabled = !(igFeedCheckbox && igFeedCheckbox.checked && igStoryCheckbox && igStoryCheckbox.checked);
+            } else {
+                jalurPosterContent.style.display = 'none';
+                if (igFeedCheckbox) igFeedCheckbox.disabled = true;
+                if (igStoryCheckbox) igStoryCheckbox.disabled = true;
+                if (verifikasiButton) verifikasiButton.disabled = true;
+            }
+        }
+      }
+
+      updateFormFieldsState();
+
+      termsCheckbox.addEventListener('change', updateFormFieldsState);
+      if (jalurEksklusifRadio) jalurEksklusifRadio.addEventListener('change', updateFormFieldsState);
+      if (jalurPosterRadio) jalurPosterRadio.addEventListener('change', updateFormFieldsState);
+      if (igFeedCheckbox) igFeedCheckbox.addEventListener('change', updateFormFieldsState);
+      if (igStoryCheckbox) igStoryCheckbox.addEventListener('change', updateFormFieldsState);
+
+      loadEventsForRegistration();
+    });
+  </script>
+</body>
+</html>
