@@ -22,15 +22,15 @@
         <span></span>
       </div>
       <div class="brand">
-        <img alt="GYS Logo" src="assets/img/gys.png"/>
-        <div class="title">Global <span>Youth</span> Summit</div>
+        <img alt="GYS Logo" src="assets/img/RKPN.png"/>
+        <div class="title"><span><span></span> <span> </div>
       </div>
       <nav class="menu">
         <a href="index.html">Home</a>
         <a href="index.html#visi">Visi &amp; Misi</a>
         <a href="index.html#program">Program Kami</a>
         <a href="validasi_status.html">Cek Status</a>
-        <a href="https://drive.google.com/file/d/1Ec1YOarCR3zkqp08xbGU4hiFKIn4teKa/view?usp=sharing" target="_blank">Legalitas</a>
+        <a href="https://drive.google.com/file/d/1Ec1YOarCR3zkqp08xbGU4hiFKIn4teKa/view?usp=sharing" target="_blank">Akta Legalitas</a>
       </nav>
     </div>
   </header>
@@ -62,7 +62,7 @@
       <h3 class="form-section-heading" style="font-size: 24px; text-align: center; margin-bottom: 24px;">Formulir Pendaftaran</h3>
       <div class="form-section-divider"></div>
 
-      <div class="form-group form-group-inline">
+      <div class="form-group" style="display: flex; align-items: center; gap: 5px;">
         <input type="checkbox" id="terms" name="terms" required>
         <label for="terms">Saya setuju dengan syarat dan ketentuan</label>
       </div>
@@ -135,8 +135,13 @@
           <input type="text" id="tiktok" name="tiktok" disabled>
         </div>
 
-       
-       
+        <h4 class="form-section-heading">Profile & Motivasi</h4>
+        <div class="form-section-divider"></div>
+        <div class="form-group">
+          <label for="bukti">Upload Bukti Follow & Share *</label>
+          <input type="file" id="bukti" name="bukti" accept="image/*" required disabled>
+          <div class="file-preview" id="bukti-preview"></div>
+        </div>
         <div class="form-group">
           <label for="motivasi">Motivasi Mengikuti Program *</label>
           <textarea id="motivasi" name="motivasi" rows="4" required disabled></textarea>
@@ -148,11 +153,15 @@
 
         <h4 class="form-section-heading">Jalur Pendaftaran</h4>
         <div class="form-section-divider"></div>
-        <div class="form-group form-group-inline">
-          <input type="radio" id="jalur-eksklusif" name="jalur" value="eksklusif" disabled>
-          <label for="jalur-eksklusif">Jalur Ekslusif</label>
-          <input type="radio" id="jalur-poster" name="jalur" value="poster" disabled>
-          <label for="jalur-poster">Jalur Upload Poster</label>
+        <div class="form-group">
+          <span style="display: inline-flex; align-items: center; gap: 5px; margin-right: 15px;">
+            <input type="radio" id="jalur-eksklusif" name="jalur" value="eksklusif" disabled>
+            <label for="jalur-eksklusif">Jalur Ekslusif</label>
+          </span>
+          <span style="display: inline-flex; align-items: center; gap: 5px; margin-right: 15px;">
+            <input type="radio" id="jalur-poster" name="jalur" value="poster" disabled>
+            <label for="jalur-poster">Jalur Upload Poster</label>
+          </span>
         </div>
 
         <div id="jalur-eksklusif-content" class="exclusive-payment-section" style="display: none;">
@@ -168,7 +177,7 @@
 
         <div id="jalur-poster-content" class="poster-verification-section" style="display: none;">
           <p>Langkah Verifikasi Upload</p>
-          <div class="form-group form-group-inline">
+          <div class="form-group">
             <input type="checkbox" id="ig-feed" name="ig-feed" disabled>
             <label for="ig-feed">Saya sudah posting twibbon di feed instagram.</label>
             <ul>
@@ -177,25 +186,19 @@
               <li>Tag @Globalyouthsummit_id saat posting</li>
             </ul>
           </div>
-          <div class="form-group form-group-inline">
+          <div class="form-group">
             <input type="checkbox" id="ig-story" name="ig-story" disabled>
             <label for="ig-story">Saya sudah upload poster di Instagram Story.</label>
             <ul>
               <li>Tag @Globalyouthsummit_id saat posting</li>
             </ul>
-            <div class="form-section-divider"></div>
-        <div class="form-group">
-          <label for="twibbon">Link Twibbon *</label>
-          <input type="url" id="twibbon" name="twibbon" placeholder="https://instagram.com/p/..." required disabled>
-        </div>
-        <div class="form-group">
-          <label for="bukti">Upload Bukti Follow & Share *</label>
-          <input type="file" id="bukti" name="bukti" accept="image/*" required disabled>
-          <div class="file-preview" id="bukti-preview"></div>
-        </div>
           </div>
           <div class="form-group">
-            <button type="submit" class="btn success" disabled>Verifikasi & Lanjutkan</button>
+            <label for="twibbon">Link Twibbon *</label>
+            <input type="url" id="twibbon" name="twibbon" placeholder="https://instagram.com/p/..." required disabled>
+          </div>
+          <div class="form-group">
+            <button type="button" class="btn success" disabled>Verifikasi & Lanjutkan</button>
           </div>
         </div>
 
@@ -210,12 +213,12 @@
     <div id="registration-result"></div>
   </main>
 
-  <footer>
+<footer>
   <div class="footer-in">
     <div>
       <div class="footer-brand">
-        <img src="assets/img/gys.png" alt="logo" style="height:32px"> 
-        <strong style="color:var(--paper); font-size: 16px;">Global Youth Summit</strong>
+        <img src="assets/img/favicon.png" alt="logo" style="height:32px"> 
+        <strong style="color:var(--paper); font-size: 16px;">Yayasan Ruang Karya Pemuda Nusantara</strong>
       </div>
       <div class="footer-contact-info small">
         <p>
@@ -224,15 +227,15 @@
         </p>
         <p>
           <strong style="color: var(--gold);">Kontak:</strong><br>
-          Telp: 088213976979<br>
-          Email: hallo.globalyouth@gmail.com
+          Telp: +62 882-1397-6979<br>
+          Email: ruangpemudanusantara.id@gmail.com
         </p>
       </div>
       <div class="social-links">
-        <a href="mailto:hallo.globalyouth@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+        <a href="mailto:hallo.globalyouth@gmail.com" style="display: inline-block;"><i class="fa-solid fa-envelope"></i></a>
           <a href="https://www.instagram.com/Globalyouthsummit_id/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
         <a href="https://www.tiktok.com/@" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
-        <a href="https://drive.google.com/file/d/1XhFN_9BF3Sf3MKr3VbWWKSSjc87mGMVh/view?usp=sharing" target="_blank" title="Akta Notaris"><i class="fa-solid fa-file-alt"></i></a>
+        <a href="https://www.youtube.com/@ruangkaryaindonesia" target="_blank" title="YouTube Channel"><i class="fa-brands fa-youtube"></i></a>
       </div>
     </div>
     <div>
@@ -256,7 +259,6 @@
 
   <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
   <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-storage.js"></script>
   <script src="assets/js/firebase-init.js"></script>
   <script src="assets/js/main.js"></script>
   <script>
@@ -277,7 +279,6 @@
 
       // --- FIREBASE INSTANCE ---
       const db = firebase.firestore();
-      const storage = firebase.storage();
 
       // --- HELPER: Get Event ID from URL ---
       const urlParams = new URLSearchParams(window.location.search);
@@ -339,7 +340,6 @@
           { id: 'event-selection', name: 'Pilihan Event' },
           { id: 'info', name: 'Info' },
           { id: 'instagram', name: 'Username Instagram' },
-          { id: 'twibbon', name: 'Link Twibbon' },
           { id: 'bukti', name: 'Bukti Follow & Share' },
           { id: 'motivasi', name: 'Motivasi' },
         ];
@@ -400,6 +400,12 @@
         }
 
         if (jalurPoster && jalurPoster.checked) {
+            const twibbon = document.getElementById('twibbon');
+            if (twibbon && !twibbon.value.trim()) {
+                alert('Link Twibbon wajib diisi untuk Jalur Upload Poster.');
+                twibbon.focus();
+                return false;
+            }
             const igFeed = document.getElementById('ig-feed');
             const igStory = document.getElementById('ig-story');
             if (igFeed && !igFeed.checked) {
@@ -471,33 +477,9 @@
           const uniqueSuffix = Date.now().toString().slice(-6);
           const customDocId = `${nameSlug}-${uniqueSuffix}`;
 
-          // Upload files to Firebase Storage
-          const buktiFile = buktiInput.files[0];
-          if (buktiFile) {
-            const storageRef = storage.ref(`bukti/${customDocId}-${buktiFile.name}`);
-            const snapshot = await storageRef.put(buktiFile);
-            participantData.buktiUrl = await snapshot.ref.getDownloadURL();
-          }
-
-          const buktiPembayaranFile = buktiPembayaranInput.files[0];
-          if (buktiPembayaranFile) {
-            const storageRef = storage.ref(`bukti-pembayaran/${customDocId}-${buktiPembayaranFile.name}`);
-            const snapshot = await storageRef.put(buktiPembayaranFile);
-            participantData.buktiPembayaranUrl = await snapshot.ref.getDownloadURL();
-          }
-
           await db.collection('events').doc(eventId).collection('participants').doc(customDocId).set(participantData);
           
-          form.style.display = 'none';
-          registrationResult.innerHTML = `
-            <div style="padding: 20px; border: 1px solid green; background-color: #e8f5e9; text-align: center; border-radius: 8px;">
-              <h4 style="color: green; font-size: 1.2em;">Pendaftaran Berhasil!</h4>
-              <p>Terima kasih telah mendaftar. Mohon simpan nomor pendaftaran Anda untuk melakukan pengecekan status.</p>
-              <p style="margin-top: 15px;">Nomor Pendaftaran Anda:</p>
-              <h3 style="background: #fff; padding: 10px; border: 1px dashed #ccc; display: inline-block; margin-top: 5px;">${registrationNumber}</h3>
-            </div>
-          `;
-          alert('Pendaftaran berhasil dikirim!');
+          window.location.href = `selesai.html?reg=${registrationNumber}`;
 
         } catch (error) {
           console.error('Error registering participant:', error);
@@ -538,6 +520,32 @@
       const igFeedCheckbox = document.getElementById('ig-feed');
       const igStoryCheckbox = document.getElementById('ig-story');
       const verifikasiButton = jalurPosterContent ? jalurPosterContent.querySelector('.btn.success') : null;
+      const twibbonInput = document.getElementById('twibbon');
+
+      if (verifikasiButton) {
+        verifikasiButton.addEventListener('click', (e) => {
+          e.preventDefault();
+          const twibbonValue = twibbonInput.value.trim();
+          const urlRegex = /^(https?:\/\/)?([\da-z\.-]+)\.([a-z\.]{2,6})([\/\w \.-]*)*\/?$/;
+          if (twibbonValue && urlRegex.test(twibbonValue)) {
+            twibbonInput.style.display = 'none'; // Hide the input
+            // Also hide the label
+            const twibbonLabel = document.querySelector('label[for="twibbon"]');
+            if (twibbonLabel) {
+              twibbonLabel.style.display = 'none';
+            }
+            const successMessage = document.createElement('p');
+            successMessage.innerHTML = '✔️ Terverifikasi';
+            successMessage.style.color = 'green';
+            successMessage.style.fontWeight = 'bold';
+            successMessage.style.textAlign = 'center';
+            twibbonInput.parentElement.appendChild(successMessage);
+            verifikasiButton.style.display = 'none'; // Hide the verification button as well
+          } else {
+            alert('Link Twibbon tidak valid. Harap masukkan URL yang benar.');
+          }
+        });
+      }
 
       function updateFormFieldsState() {
         const isTermsChecked = termsCheckbox.checked;
@@ -570,11 +578,13 @@
                 jalurPosterContent.style.display = 'block';
                 if (igFeedCheckbox) igFeedCheckbox.disabled = false;
                 if (igStoryCheckbox) igStoryCheckbox.disabled = false;
+                if (twibbonInput) twibbonInput.disabled = false;
                 if (verifikasiButton) verifikasiButton.disabled = !(igFeedCheckbox && igFeedCheckbox.checked && igStoryCheckbox && igStoryCheckbox.checked);
             } else {
                 jalurPosterContent.style.display = 'none';
                 if (igFeedCheckbox) igFeedCheckbox.disabled = true;
                 if (igStoryCheckbox) igStoryCheckbox.disabled = true;
+                if (twibbonInput) twibbonInput.disabled = true;
                 if (verifikasiButton) verifikasiButton.disabled = true;
             }
         }

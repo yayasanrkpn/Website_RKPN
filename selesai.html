@@ -1,57 +1,16 @@
 <!DOCTYPE html>
 <html lang="id">
-
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-  <title>Daftar Event - Yayasan Langkah Emas Indonesia</title>
-  <meta name="description" content="Formulir pendaftaran untuk event Yayasan Langkah Emas Indonesia.">
-  <meta name="author" content="Yayasan Langkah Emas Indonesia">
-
-  <!-- Favicon -->
+  <title>Pendaftaran Berhasil - Global Youth Summit</title>
   <link rel="icon" type="image/png" href="assets/lamansia.png">
-
-  <!-- Fonts & Icons -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&amp;display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
-  <!-- Main CSS -->
   <link rel="stylesheet" href="assets/css/style.css" />
-  <style>
-    body {
-      background-color: #f0f2f5;
-    }
-    .main-content {
-      padding: 40px 20px;
-      max-width: 600px;
-      margin: 0 auto;
-    }
-    .registration-form {
-      background: #fff;
-      padding: 30px;
-      border-radius: 10px;
-      box-shadow: 0 4px 20px rgba(0,0,0,0.1);
-    }
-    .form-group {
-      margin-bottom: 20px;
-    }
-    .form-group label {
-      display: block;
-      margin-bottom: 5px;
-      font-weight: 600;
-    }
-    .form-group input,
-    .form-group select {
-      width: 100%;
-      padding: 10px;
-      border: 1px solid #ddd;
-      border-radius: 5px;
-    }
-  </style>
 </head>
-
 <body>
+  <!-- HEADER / NAVBAR -->
   <header>
     <div class="container nav">
       <div class="hamburger-menu" id="hamburger-menu">
@@ -72,35 +31,23 @@
       </nav>
     </div>
   </header>
-  <div class="main-content">
-    <div class="registration-form">
-      <h2>Pendaftaran Event</h2>
-      <form id="registration-form">
-        <div class="form-group">
-          <label for="event-selection">Pilih Event</label>
-          <select id="event-selection" required></select>
+
+  <main class="form-container">
+    <div class="card">
+        <div id="registration-success" style="padding: 20px; border: 1px solid green; background-color: #e8f5e9; text-align: center; border-radius: 8px;">
+            <h4 style="color: green; font-size: 1.5em;">Pendaftaran Berhasil!</h4>
+            <p>Terima kasih telah mendaftar. Mohon simpan nomor pendaftaran Anda untuk melakukan pengecekan status di kemudian hari.</p>
+            <p style="margin-top: 20px;">Nomor Pendaftaran Anda:</p>
+            <h3 id="registration-number" style="background: #fff; padding: 15px; border: 2px dashed #ccc; display: inline-block; margin-top: 10px; font-size: 1.8em; letter-spacing: 2px;">
+                Memuat...
+            </h3>
+            <div style="margin-top: 25px;">
+                <a href="validasi_status.html" class="btn primary">Cek Status Pendaftaran</a>
+                <a href="index.html" class="btn secondary">Kembali ke Home</a>
+            </div>
         </div>
-        <div class="form-group">
-          <label for="name">Nama Lengkap</label>
-          <input type="text" id="name" required>
-        </div>
-        <div class="form-group">
-          <label for="email">Email</label>
-          <input type="email" id="email" required>
-        </div>
-        <div class="form-group">
-          <label for="registration-number">Nomor Pendaftaran</label>
-          <input type="text" id="registration-number" required>
-        </div>
-        <div class="form-group">
-          <label for="dob">Tanggal Lahir</label>
-          <input type="date" id="dob" required>
-        </div>
-        <button type="submit" class="btn btn-primary">Daftar</button>
-      </form>
-      <div id="registration-result" class="mt-4"></div>
     </div>
-  </div>
+  </main>
 
 <footer>
   <div class="footer-in">
@@ -145,6 +92,20 @@
     </div>
   </div>
 </footer>
-</body>
 
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const registrationNumberEl = document.getElementById('registration-number');
+      const urlParams = new URLSearchParams(window.location.search);
+      const regNumber = urlParams.get('reg');
+
+      if (registrationNumberEl && regNumber) {
+        registrationNumberEl.textContent = regNumber;
+      } else if (registrationNumberEl) {
+        registrationNumberEl.textContent = 'Tidak Ditemukan';
+        registrationNumberEl.style.color = 'red';
+      }
+    });
+  </script>
+</body>
 </html>

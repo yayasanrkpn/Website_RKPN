@@ -253,7 +253,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // --- FUNCTION: Show Participant Details in Modal ---
   function showParticipantDetails(p, participantId, eventId) {
     const modal = document.getElementById('participant-detail-modal');
-    const modalBody = document.getElementById('modal-body');
+    const modalBody = modal.querySelector('#modal-body'); // Select the modal-body within the modal
     modalBody.innerHTML = `
       <p><strong>Nama Lengkap:</strong> ${p.nama || ''}</p>
       <p><strong>Nomor Pendaftaran:</strong> ${p.nomor_pendaftaran || ''}</p>
@@ -269,6 +269,7 @@ document.addEventListener('DOMContentLoaded', () => {
       <p><strong>Info Didapat Dari:</strong> ${p.info || ''}</p>
       <p><strong>Username Instagram:</strong> ${p.instagram || ''}</p>
       <p><strong>Username TikTok:</strong> ${p.tiktok || ''}</p>
+      ${p.twibbon ? `<p><strong>Link Twibbon:</strong> <a href="${p.twibbon}" target="_blank">${p.twibbon}</a></p>` : ''}
       <p><strong>Motivasi:</strong> ${p.motivasi || ''}</p>
       <p><strong>Jalur Pendaftaran:</strong> ${p.jalur || ''}</p>
       <p><strong>Status Pendaftaran:</strong> ${p.status || ''}</p>
